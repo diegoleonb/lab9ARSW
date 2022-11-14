@@ -250,21 +250,41 @@ Antes de continuar puede eliminar el grupo de recursos anterior para evitar gast
 
 ![](images/part2/part2-lb-create.png)
 
+Se crea el balanceador de carga.
+
+![](img/Captura38.PNG)
+
 2. A continuación cree un *Backend Pool*, guiese con la siguiente imágen.
 
 ![](images/part2/part2-lb-bp-create.png)
+
+Se crea el Backend Pool.
+
+![](img/Captura39.PNG)
 
 3. A continuación cree un *Health Probe*, guiese con la siguiente imágen.
 
 ![](images/part2/part2-lb-hp-create.png)
 
+Se crea el Health Probe.
+
+![](img/Captura40.PNG)
+
 4. A continuación cree un *Load Balancing Rule*, guiese con la siguiente imágen.
 
 ![](images/part2/part2-lb-lbr-create.png)
 
+Se crea el Load Balancing Rule.
+
+![](img/Captura41.PNG)
+
 5. Cree una *Virtual Network* dentro del grupo de recursos, guiese con la siguiente imágen.
 
 ![](images/part2/part2-vn-create.png)
+
+Se crea la Virtual Network.
+
+![](img/Captura42.PNG)
 
 #### Crear las maquinas virtuales (Nodos)
 
@@ -286,6 +306,18 @@ Ahora vamos a crear 3 VMs (VM1, VM2 y VM3) con direcciones IP públicas standar 
 
 ![](images/part2/part2-vm-create4.png)
 
+
+Creación de las VM1, VM2 y VM3.
+
+![](img/Captura43.PNG)
+
+![](img/Captura44.PNG)
+
+![](img/Captura45.PNG)
+
+![](img/Captura46.PNG)
+
+
 5. Finalmente debemos instalar la aplicación de Fibonacci en la VM. para ello puede ejecutar el conjunto de los siguientes comandos, cambiando el nombre de la VM por el correcto
 
 ```
@@ -302,7 +334,17 @@ npm install forever -g
 forever start FibonacciApp.js
 ```
 
+Instalación de la aplicación FibonacciApp.
+
+![](img/Captura47.PNG)
+
+![](img/Captura48.PNG)
+
+![](img/Captura49.PNG)
+
 Realice este proceso para las 3 VMs, por ahora lo haremos a mano una por una, sin embargo es importante que usted sepa que existen herramientas para aumatizar este proceso, entre ellas encontramos Azure Resource Manager, OsDisk Images, Terraform con Vagrant y Paker, Puppet, Ansible entre otras.
+
+![](img/Captura50.PNG)
 
 #### Probar el resultado final de nuestra infraestructura
 
