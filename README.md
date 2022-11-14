@@ -160,6 +160,10 @@ Modificamos el archivo de entorno para que coincida con la IP de nuestra maquina
 
 ![](img/Captura22.PNG)
 
+![](img/Captura34.PNG)
+
+![](img/Captura35.PNG)
+
 
 10. La cantidad de CPU consumida es bastante grande y un conjunto considerable de peticiones concurrentes pueden hacer fallar nuestro servicio. Para solucionarlo usaremos una estrategia de Escalamiento Vertical. En Azure diríjase a la sección *size* y a continuación seleccione el tamaño `B2ms`.
 
@@ -210,6 +214,12 @@ Modificamos el archivo de entorno para que coincida con la IP de nuestra maquina
     Uso de CPU de la maquina virtual.
 
     ![](img/Captura33.PNG)
+
+    Prueba de carga con Postman.
+
+    ![](img/Captura36.PNG)
+
+    ![](img/Captura37.PNG)
 
 12. Evalue el escenario de calidad asociado al requerimiento no funcional de escalabilidad y concluya si usando este modelo de escalabilidad logramos cumplirlo.
 13. Vuelva a dejar la VM en el tamaño inicial para evitar cobros adicionales.
